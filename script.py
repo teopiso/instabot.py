@@ -8,10 +8,11 @@ from src.check_status import check_status
 from src.feed_scanner import feed_scanner
 from src.follow_protocol import follow_protocol
 from src.unfollow_protocol import unfollow_protocol
-
+login = raw_input('nome utente: ')
+psw = raw_input('password: ')
 bot = InstaBot(
-    login="",
-    password="",
+    login=login,
+    password=psw,
     like_per_day=900,
     comments_per_day=0,
     tag_list=['l4l', 'f4f', 'l4f','likeforlikes','like4likes','likeforfollow', 'l:213050058' ],
